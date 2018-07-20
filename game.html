@@ -5,9 +5,97 @@
 		<title>Card Game Test</title>
 	</head>
 	<body>
-    
-		<script>
 
+		<div id="head">
+			<div class="drain">
+			</div>
+			<div class="durability">
+			</div>
+			<div class="dmg">
+			</div>
+			<div class="rld">
+			</div>
+			<div class="effects">
+			</div>
+		</div>
+		<div id="torso">
+			<div class="drain">
+			</div>
+			<div class="durability">
+			</div>
+			<div class="dmg">
+			</div>
+			<div class="rld">
+			</div>
+			<div class="effects">
+			</div>
+		</div>
+		<div id="larm">
+			<div class="drain">
+			</div>
+			<div class="durability">
+			</div>
+			<div class="dmg">
+			</div>
+			<div class="rld">
+			</div>
+			<div class="effects">
+			</div>
+		</div>
+		<div id="rarm">
+			<div class="drain">
+			</div>
+			<div class="durability">
+			</div>
+			<div class="dmg">
+			</div>
+			<div class="rld">
+			</div>
+			<div class="effects">
+			</div>
+		</div>
+		<div id="legs">
+			<div class="drain">
+			</div>
+			<div class="durability">
+			</div>
+			<div class="dmg">
+			</div>
+			<div class="rld">
+			</div>
+			<div class="effects">
+			</div>
+		</div>
+
+		<button onclick="ReadList();">Try It!</button>
+
+		<script src="js/papaparse.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<script>
+			var cardList = "CardList.csv";
+			var battery = 12;
+			var health = 100;
+			var barrier = 0;
+			var armor = 0;
+			var deck = [];
+			
+			function ReadList () {
+				console.log("happening!");
+				Papa.parse(cardList, {
+					header: true,
+					dynamicTyping: true,
+					complete: function (results) {
+						data = results;
+						console.log(data);
+					}
+				});
+			}
+			
+
+			function PlayCard (type, part, faction, drain, dmg, rld) {
+
+			}
 		</script>
 	</body>
 </html>

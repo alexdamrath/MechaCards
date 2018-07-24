@@ -68,6 +68,7 @@
 		</div>
 
 		<button onclick="ReadList();">Try It!</button>
+		<button id="draw">Draw a card!</button>
 
 		<script src="js/papaparse.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
@@ -93,8 +94,30 @@
 			}
 			
 
-			function PlayCard (type, part, faction, drain, dmg, rld) {
+			var type = "part";
+			var part = "arm";
+			var faction = "metal";
+			var drain = 0;
+			var dmg = 6;
+			var rld = 0;
+			var effects = "Melee";
 
+			$("#draw").click(function () {
+				PlayCard(type, part, faction, drain, dmg, rld, effects);
+			});
+			
+			function PlayCard (type, part, faction, drain, dmg, rld, effects) {
+				if (type == "part") {
+					if (part == "arm") {
+						
+					}
+				}
+
+				$(".drain").text(drain);
+				$(".durability").text("3");
+				$(".dmg").text(dmg);
+				$(".rld").text(rld);
+				$(".effects").text(effects);
 			}
 		</script>
 	</body>

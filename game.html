@@ -6,7 +6,12 @@
 	</head>
 	<body>
 
+		<button onclick="ReadList();">Try It!</button>
+		<button id="draw">Draw a card!</button>
+
 		<div id="head">
+			<div class="name">
+			</div>
 			<div class="drain">
 			</div>
 			<div class="durability">
@@ -19,6 +24,8 @@
 			</div>
 		</div>
 		<div id="torso">
+			<div class="name">
+			</div>
 			<div class="drain">
 			</div>
 			<div class="durability">
@@ -31,6 +38,8 @@
 			</div>
 		</div>
 		<div id="larm">
+			<div class="name">
+			</div>
 			<div class="drain">
 			</div>
 			<div class="durability">
@@ -43,6 +52,8 @@
 			</div>
 		</div>
 		<div id="rarm">
+			<div class="name">
+			</div>
 			<div class="drain">
 			</div>
 			<div class="durability">
@@ -55,6 +66,8 @@
 			</div>
 		</div>
 		<div id="legs">
+			<div class="name">
+			</div>
 			<div class="drain">
 			</div>
 			<div class="durability">
@@ -67,14 +80,13 @@
 			</div>
 		</div>
 
-		<button onclick="ReadList();">Try It!</button>
-		<button id="draw">Draw a card!</button>
-
 		<script src="js/papaparse.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.csv.js"></script>
 
 		<script>
-			var cardList = "CardList.csv";
+			var cardsRaw = "CardList.csv";
+			var cardList;
 			var battery = 12;
 			var health = 100;
 			var barrier = 0;
@@ -92,10 +104,16 @@
 					}
 				});
 			}
-			
 
+			$(document).ready(function () {
+				cardList = $.csv.toObjects(cardsRaw);
+				console.log(cardList);
+			});
+			
+			var name = "Steel Sword";
 			var type = "part";
 			var part = "arm";
+			var rarm = true;
 			var faction = "metal";
 			var drain = 0;
 			var dmg = 6;
@@ -103,21 +121,39 @@
 			var effects = "Melee";
 
 			$("#draw").click(function () {
-				PlayCard(type, part, faction, drain, dmg, rld, effects);
+				PlayCard(name, type, part, faction, drain, dmg, rld, effects);
 			});
 			
-			function PlayCard (type, part, faction, drain, dmg, rld, effects) {
+			function PlayCard (name,type, part, faction, drain, dmg, rld, effects) {
 				if (type == "part") {
 					if (part == "arm") {
-						
+						if (rarm) {
+							$("#rarm .name").text(name);
+							$("#rarm .drain").text(drain);
+							$("#rarm .durability").text("3");
+							$("#rarm .dmg").text(dmg);
+							$("#rarm .rld").text(rld);
+							$("#rarm .effects").text(effects);
+						}else {
+
+						}
+					}
+					switch (part) {
+						case "head":
+							
+							break;
+						case "torso":
+
+							break;
+						case "legs":
+
+							break;
+						default:
+							break;
 					}
 				}
 
-				$(".drain").text(drain);
-				$(".durability").text("3");
-				$(".dmg").text(dmg);
-				$(".rld").text(rld);
-				$(".effects").text(effects);
+				
 			}
 		</script>
 	</body>

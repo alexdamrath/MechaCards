@@ -1,0 +1,80 @@
+ID	Name	Part/Action	Drain	Dmg	Rld	Class	Effects	Flavor
+1	Shell Cannon	Arm	1	11	1	Live		
+2	Guass Cannon	Arm	2	15	2	Live		
+3	Railgun	Arm	3	16	2	Live	Deals electrical damage	
+4	Gatling	Arm	3	18	2	Live	Targets two systems	
+5	Steel Sword	Arm	0	8	0	Metal		
+6	Steel Shield	Arm	1	0	0	Metal	Adds 50 armor	
+7	Longinus Lance	Arm	2	13	0	Metal		
+8	Grimswald	Arm	4	18	0	Metal	Adds 30 armor	
+9	Beam Blade	Arm	3	12	1	Energy		
+10	Lightwave Shield	Arm	3	0	0	Energy	Adds 20 barrier	
+11	Plasma cannon	Arm	4	15	1	Energy		
+12	Judgment	Arm	5	20	1	Energy		
+13	Solar Bomb	Arm	5	40	4	Energy	Explosive	
+14	Missile Rack	Arm	2	23	3	Missile	Explosive	
+15	The Big One	Arm	4	34	3	Missile	Explosive	
+16	Flamethrower	Arm	2	10	1	Fire		
+17	Flame Axe	Arm	3	15	0	Fire	melee	
+18	Gas launcher	Arm	2	10	2	Fire	"Trap, tripped via fire"	
+19	Ice beam	Arm	2	13	1	Ice		
+20	Nitrogen spray	Arm	1	8	1	Ice		
+21	Blizzard cannon	Arm	4	20	2	Ice	explosive	
+22	Acid spray	Arm	1	10	1	Acid		
+23	Acid bomb	Arm	3	24	2	Acid	explosive	
+24	Acid trap	Arm	1	30	3	Acid	"trap, tripped via melee"	
+25	Shock maul	Arm	2	18	0	Electric	melee	
+26	Arc Cannon	Arm	3	26	1	Electric		
+27	Thunderstorm	Arm	5	36	2	Electric	Explosive	
+28	Heartbeam	Torso	4	20	1	Energy		
+29	Energy projector	Torso	3	0	0	Energy	Adds 30 barrier	
+30	Powerloader	Torso	2	0	0	Live	All reloads reduced by 1	
+31	Gun rack	Torso	2	10	1	Live		
+32	Hardbody	Torso	2	0	0	Metal	Adds 60 armor	
+33	Generator	Torso	0	0	0	Energy	Battery power +2	
+34	Missile Rack	Torso	3	25	2	Missile	Explosive	
+35	Grounded resistor	Torso	2	0	0	Metal	Reduces all incoming acid/electric damage	
+36	Heated coil inductor	Torso	2	0	0	Metal	Reduces all incoming fire/ice damage	
+37	Arc System	Torso 	4	10	2	Missile	"Explosive, increases all other damage by 2"	
+38	Thorns	Torso 	3	0	0	Metal	"Melee attacks recieve damage, adds 30 armor"	
+39	Headcanon	Head	2	10	1	Live		
+40	Missile Rack	Head	2	8	1	Missile		
+41	Spare Battery	Head	0	0	0	Energy	Battery power +1	
+42	Lancer System	Head	3	0	0	Energy	Disable incoming missile attacks	
+43	Targetting System	Head	3	0	0	Metal	Target up to two systems	
+44	Lightning Rod	Head	3	0	0	Metal	Electric attacks power up energy weapons	
+45	Heat Breather	Head	2	7	1	Fire		
+46	Freeze Ray	Head	2	6	1	Ice		
+47	Drill	Head	4	12	1	Metal	Weapon burrows underground before attacking - attacker is immune to damage for 1 turn	
+48	Valkyrie	Head	5	20	2	Energy	Adds 10 barrier	
+49	Horns	Head	1	6	0	Metal		
+50	Jackknife	Legs	3	10	1	Energy		
+51	Brambles	Legs	2	0	0	Metal	"Melee attacks recieve damage, adds 20 armor"	
+52	Grounded Standoffs	Legs	1	0	0	Metal	Reduce all incoming electric damage	
+53	Missile Rack	Legs	2	8	1	Missile		
+54	Cannons	Legs	2	12	2	Live		
+55	Lavafall	Action	4	0	0	0	Apply fire effects to enemy systems for 3 turns	
+56	Chemical spill	Action	4	0	0	0	"Each turn on your target phase, reduce enemy armor by 20, for 3 turns"	
+57	Powerplant	Action	4	0	0	0	"Each turn on your target phase, reduce enemy barrier by 30, for 3 turns"	
+58	Snowstorm	Action	4	0	0	0	All enemy weapons add 2 to their reload counter	
+59	Full Payload	Action	3	0	0	0	Fire all available missile class weapons	
+60	Target paint	Action	2	0	0	0	target three systems for damage effects	
+61	Instant mag	Action	3	0	0	0	Full reload all live weapon systems	
+62	Overvolt	Action	4	0	0	0	Increase all energy weapon damage by 3	
+63	Ubercharge	Action	0	0	0	0	Add 2 extra battery for 2 turns	
+64	Lance System	Action	3	0	0	0	Disables any incoming missile attacks for 1 round	
+65	Repair Drone	Action	4	0	0	0	Recovers 25 health	
+66	Dome Shield	Action	5	0	0	0	Ignore damage for 1 round	
+67	Tap in 	Action	4	0	0	0	Designate your opponents next damage target	
+68	Dismantle	Action	6	0	0	0	Remove an opponent's part	
+69	Pit Crew	Action	2	0	0	0	"Shuffle current hand into deck, redraw hand"	
+70	Iron Clad	Action	3	0	0	0	Add 50 armor	
+71	Refractive coating	Action	4	0	0	0	Add 50 barrier	
+72	Overheat	Action	4	0	0	0	"Double next live weapon damage, then double the reload"	
+73	EMP	Action	3	0	0	0	Disable enemy energy based systems for a turn	
+74	Pilot's Pistol	Action	0	1	0	0	"If opponent has 5 health or less, this card deals 5 damage instead"	
+75	Amp Wave	Action	6	0	0	0	Tripple damage next attack	
+76	Tremor Stomp	Action	5	0	0	0	"Opponent skips next play phase, going from draw phase straight to target phase"	
+77	Slow Blade	Action	3	0	0	0	Next Melee attack ignores barriers	
+78	AP Round	Action	3	0	0	0	Next Live attack ignores armor	
+79	Lift Off	Action	4	0	0	0	Cannot be targetted by melee attacks for a turn	
